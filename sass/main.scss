@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+$color-Red: hsl(0, 100%, 74%);
+$color-Green: hsl(154, 59%, 51%);
+$color-Blue: hsl(248, 32%, 49%);
+$color-Dark-Blue: hsl(249, 10%, 26%);
+$color-Grayish-Blue: hsl(246, 25%, 77%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-Red;
+}
+
+.container {
+  max-width: 144rem;
+  width: 90%;
+  margin: 2rem auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.container-top {
+  h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+  }
+
+  h4 {
+    color: whitesmoke;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 2rem;
+  }
+}
+
+.container-bottom {
+  width: 100%;
+  .trialOfferBtn {
+    background-color: $color-Blue;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    width: 100%;
+    line-height: 1.5;
+    box-shadow: 0 0.5rem 0.2rem rgba($color: #000000, $alpha: 0.2);
+    span {
+      font-weight: 400;
+      color: $color-Grayish-Blue;
+    }
+    margin-bottom: 2rem;
+  }
+
+  form {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.2rem rgba($color: #000000, $alpha: 0.2);
+    .form-group {
+      width: 100%;
+      margin-bottom: 2.5rem;
+      position: relative;
+      input {
+        width: 100%;
+        padding: 1rem 0;
+        border: 0.1px solid $color-Grayish-Blue;
+        outline: none;
+        padding-left: 1rem;
+        color: $color-Dark-Blue;
+        font-weight: 600;
+        &::placeholder {
+          color: $color-Grayish-Blue;
+          font-weight: 600;
+          font-size: 1.2rem;
+        }
+      }
+
+      span {
+        position: absolute;
+        right: 0;
+        bottom: -2rem;
+        font-size: 1rem;
+        color: $color-Red;
+        font-weight: 500;
+        font-style: italic;
+      }
+    }
+
+    button {
+      background-color: $color-Green;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: white;
+      outline: none;
+      border: none;
+      width: 100%;
+      border-radius: 1rem;
+      padding: 2rem 0;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+    }
+
+    h6 {
+      color: $color-Grayish-Blue;
+      font-size: 1rem;
+      span {
+        color: $color-Red;
+      }
+    }
+  }
+}

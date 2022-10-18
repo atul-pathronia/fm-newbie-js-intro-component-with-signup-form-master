@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background-image: url("/images/bg-intro-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ff7a7a; }
+
+.container {
+  max-width: 144rem;
+  width: 90%;
+  margin: 2rem auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center; }
+
+.container-top h1 {
+  color: white;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1.2; }
+
+.container-top h4 {
+  color: whitesmoke;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-bottom: 2rem; }
+
+.container-bottom {
+  width: 100%; }
+  .container-bottom .trialOfferBtn {
+    background-color: #6055a5;
+    color: white;
+    font-weight: 700;
+    padding: 1rem 0;
+    border-radius: 1rem;
+    width: 100%;
+    line-height: 1.5;
+    box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+    margin-bottom: 2rem; }
+    .container-bottom .trialOfferBtn span {
+      font-weight: 400;
+      color: #b9b6d3; }
+  .container-bottom form {
+    background-color: white;
+    padding: 1.2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.2); }
+    .container-bottom form .form-group {
+      width: 100%;
+      margin-bottom: 2.5rem;
+      position: relative; }
+      .container-bottom form .form-group input {
+        width: 100%;
+        padding: 1rem 0;
+        border: 0.1px solid #b9b6d3;
+        outline: none;
+        padding-left: 1rem;
+        color: #3e3c49;
+        font-weight: 600; }
+        .container-bottom form .form-group input::placeholder {
+          color: #b9b6d3;
+          font-weight: 600;
+          font-size: 1.2rem; }
+      .container-bottom form .form-group span {
+        position: absolute;
+        right: 0;
+        bottom: -2rem;
+        font-size: 1rem;
+        color: #ff7a7a;
+        font-weight: 500;
+        font-style: italic; }
+    .container-bottom form button {
+      background-color: #38cc8c;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: white;
+      outline: none;
+      border: none;
+      width: 100%;
+      border-radius: 1rem;
+      padding: 2rem 0;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem; }
+    .container-bottom form h6 {
+      color: #b9b6d3;
+      font-size: 1rem; }
+      .container-bottom form h6 span {
+        color: #ff7a7a; }
